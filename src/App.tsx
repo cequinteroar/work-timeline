@@ -5,6 +5,12 @@ import './App.css';
 
 function App() {
   const data = [{year:2001, activity:"Test Engineer"},{year:2002, activity:"Test Engineer jest"}];
+  const hStyles = {
+    paddingTop: 20,
+    paddingBottom: 20,
+    paddingLeft: 20,
+    marginTop: 30
+  }
   return (
     <>
       <TimeLine>
@@ -19,6 +25,7 @@ function App() {
         <TimeLineItem year={2020} current={true} activity={"Graduation at Technische Universität Ilmenau - M.Sc in Media technology"}></TimeLineItem>
         <TimeLineItem year={2020} current={true} activity={"Software Developer - Reactjs"}></TimeLineItem>
       </TimeLine>
+      <h1 style={hStyles} >Timeline with data</h1>
       <TimeLine data={data}></TimeLine>
     </>
   );

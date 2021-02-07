@@ -1,25 +1,17 @@
 {
   "name": "@cequinteroar/work-timeline",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": false,
-  "author": "Cesar Quintero Arias",
-  "description": "Time line for CV websites/portfolio using react",
-  "license": "ISC",
-  "main": "src/index.tsx",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "@types/classnames": "^2.2.11",
-    "@types/jest": "^24.9.1",
-    "@types/node": "^12.19.16",
-    "@types/react": "^16.14.3",
-    "@types/react-dom": "^16.9.10",
-    "classnames": "^2.2.6",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-scripts": "^4.0.2",
-    "typescript": "^3.9.7"
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.6.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.2",
+    "web-vitals": "^1.1.0",
+    "typescript": "^3.9.7",
+    "classnames": "^2.2.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,14 +20,17 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@cequinteroar"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cequinteroar/timeline.git"
+    "url": "git+https://github.com/cequinteroar/work-timeline.git"
   },
   "keywords": [
     "timeline",
@@ -55,7 +50,5 @@
   },
   "bugs": {
     "url": "https://github.com/cequinteroar/work-timeline.git"
-  },
-  "homepage": "https://github.com/cequinteroar/work-timeline#readme",
-  "devDependencies": {}
+  }
 }
