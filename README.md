@@ -20,7 +20,7 @@ Builds the app for production environament in `build` folder
 
 ### `examples`
 
-```react
+```javascript
 import React from 'react';
 import TimeLine from './time-line/TimeLine';
 import TimeLineItem from './time-line/TimeLineItem';
