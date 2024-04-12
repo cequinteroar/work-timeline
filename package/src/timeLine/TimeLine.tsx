@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import "../style/timeLine.scss";
 import { TimeLineItem } from "../timeLineItem/TimeLineItem";
 
