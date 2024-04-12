@@ -1,29 +1,6 @@
-# Getting Started with work-timeline
-This project was created to be able to add a time line into your cv, website or portfolio. This project uses react module named classnames, reac, html, typescript and css
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the test project.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm run build`
-
-Builds the app for production environament in `build` folder
-
-
-### `examples`
-
-```javascript
 import React from 'react';
-import TimeLine from './time-line/TimeLine';
-import TimeLineItem from './time-line/TimeLineItem';
+import TimeLine from './src/time-line/TimeLine';
+import TimeLineItem from './src/time-line/TimeLineItem';
 import './App.css';
 
 function App() {
@@ -55,4 +32,3 @@ function App() {
 }
 
 export default App;
-```

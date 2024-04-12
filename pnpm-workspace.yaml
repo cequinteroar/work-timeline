@@ -1,0 +1,3 @@
+packages:
+  - "package/src"
+  - "storybook"
