@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import "../style/timeLine.scss";
 import { TimeLineItem } from "../timeLineItem/TimeLineItem";
 
@@ -6,13 +6,8 @@ export interface TimeLineProps {
   data?: Array<any>;
 }
 
-export const TimeLine: React.FC<TimeLineProps> = (
-  props: TimeLineProps & {
-    children?: React.ReactNode;
-  }
-) => {
-  let items = props.children;
-  const data = props.data;
+export const TimeLine: React.FC<React.PropsWithChildren<TimeLineProps>> = ({ data, children }) => {
+  let items = children;
   if (data) {
     // Width (%) to place equitatively the timeline points
     const length = 100 / data.length;
@@ -30,7 +25,7 @@ export const TimeLine: React.FC<TimeLineProps> = (
   }
   return (
     <div className="container">
-      <ul className="timeline">{!props.data ? props.children : items}</ul>
+      <ul className="timeline">{!data ? children : items}</ul>
     </div>
   );
 };

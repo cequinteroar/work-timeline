@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 
-import { TimeLine, TimeLineItem } from "timeline-cv";
+import { TimeLine } from "../../package/src/timeLine";
+import { TimeLineItem } from "../../package/src/timeLineItem";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta: Meta<typeof TimeLine> = {
