@@ -32,4 +32,5 @@ export default {
     typescript({ useTsconfigDeclarationDir: true }),
     postcss(),
   ],
+  external: ["react", "react-dom"],
 };

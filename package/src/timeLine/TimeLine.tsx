@@ -23,9 +23,5 @@ export const TimeLine: React.FC<React.PropsWithChildren<TimeLineProps>> = ({ dat
       );
     });
   }
-  return (
-    <div className="container">
-      <ul className="timeline">{!data ? children : items}</ul>
-    </div>
-  );
+  return <ul className="timeline">{!data ? children : items}</ul>;
 };
